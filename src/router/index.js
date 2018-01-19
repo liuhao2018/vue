@@ -5,6 +5,7 @@ import MyComponent from '@/components/MyComponent'
 import Index from '@/components/Index'
 import Show from '@/components/ShowComponent'
 import User from '@/components/User'
+import NotFound from "@/components/NotFoundComponent"
 Vue.use(Router)
 
 export default new Router({
@@ -32,6 +33,10 @@ export default new Router({
     {
       path: '/',
       component: Index
+    },
+    {
+      path:'*',
+      component:NotFound
     }
   ]
 })
